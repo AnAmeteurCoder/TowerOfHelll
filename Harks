@@ -1,0 +1,68 @@
+-- Script by NOT a scammer#6336
+--Kavo ui by xHeptic
+-- Tool giver by SprinHub
+local b = Instance.new("BindableFunction")
+function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://www.youtube.com/channel/UCW8W-l1HD0cz2zyTpDCNtWQ") end end end
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Maybe sub?", Text = "Credit to all the YouTubers who taught me how to script", Duration = 5, Callback = b, Button1 = "Copy Link"})
+if game.PlaceId ~= 1962086868 then
+    game.Players.LocalPlayer:Kick("wrong game")
+end 
+
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Tower of Hell/Heck", "Serpent")
+    local Tab = Window:NewTab("Blatant")
+    local Tab2 = Window:NewTab("Universal")
+    local Tab3 = Window:NewTab("Credits")
+    local Tab4 = Window:NewTab("Game Tools")
+    local Section = Tab:NewSection("Important")
+    local Section2 = Tab2:NewSection("Universal")
+    local Section3 = Tab3:NewSection("Credits")
+    local Section4 = Tab:NewSection("The Big Bois")
+    local Section5 = Tab4:NewSection("All tools")
+    local Section6 = Tab3:NewSection("Credits")
+    local infJump = true;
+
+
+    Section:NewButton("GodMode", "", function()
+        game.Players.LocalPlayer.Character.KillScript:Destroy()
+    end)
+
+    Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+        Library:ToggleUI()
+    end)
+
+
+    Section4:NewButton("TP to the top", "GO GO GO", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").tower.sections.finish.exit.carpet.CFrame
+    end)
+
+
+
+Section4:NewButton("AntiCheatDisabler", "", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnAmeteurCoder/AntiCheatDisabler/main/AntiCheatDisabler", true))()
+end)
+
+Section4:NewButton("Inf Jump", "", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AnAmeteurCoder/InfJump/main/Ez", true))()
+end)
+
+
+
+  Section2:NewSlider("WalkSpeed", "", 200, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section2:NewSlider("JumpPower", "", 500, 50, function(j) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+end)
+
+Section2:NewSlider("Gravity", "Requires AntiCheatDisabler", 500, 0, function(g) -- 500 (MaxValue) | 0 (MinValue)
+    game.Workspace.Gravity = g
+end)
+
+Section5:NewButton("Give All TOOLS", "Requires AntiCheatDisabler", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ngVWmQ8m", true))()
+end)
+
+Section6:NewLabel("Credits to SprinHub")
+Section6:NewLabel("YT: Rando Guy On THe Internet")
