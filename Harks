@@ -27,7 +27,7 @@ end
         game.Players.LocalPlayer.Character.KillScript:Destroy()
     end)
 
-    Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+    Section:NewKeybind("CloseGui", "KeybindInfo", Enum.KeyCode.F, function()
         Library:ToggleUI()
     end)
 
