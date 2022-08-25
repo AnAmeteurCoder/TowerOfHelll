@@ -4,3 +4,4 @@ if game.Players.LocalPlayer.UserId == 3789457281 or game.Players.LocalPlayer.Use
     local b = Instance.new("BindableFunction")
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "You are not whilelisted", Text = "Skill issue ngl ", Duration = 5, Callback = b, Button1 = "shut up"})
 end
+-- yes
