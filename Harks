@@ -1,4 +1,4 @@
-if game.Players.LocalPlayer.UserId == 1962086868 or game.Players.LocalPlayer.UserId == 1962086868 or game.Players.LocalPlayer.UserId == 3821744031 or game.Players.LocalPlayer.UserId == 3821744031 or game.Players.LocalPlayer.UserId == 3721982045 then
+if game.Players.LocalPlayer.UserId == 3789457281 or game.Players.LocalPlayer.UserId == 1962086868 or game.Players.LocalPlayer.UserId == 3821744031 or game.Players.LocalPlayer.UserId == 3821744031 or game.Players.LocalPlayer.UserId == 3721982045 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AnAmeteurCoder/TowerOfHell/main/Harks", true))()
    else
     local b = Instance.new("BindableFunction")
